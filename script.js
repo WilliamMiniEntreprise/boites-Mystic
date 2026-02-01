@@ -1,5 +1,5 @@
 // 🔧 1) METS ICI L’ID DE TON GOOGLE SHEET
-const SHEET_ID = "1PYXD5iDtxqYmMWwxf64FfOTyXpkRlUj4";
+const SHEET_ID = "1Bqd1kfgQGtH1hDLb0B5Zubu1OvtI9sk72Z9WopzZQBs";
 
 // URLs pour lire et écrire dans Google Sheets via l’API publique
 const STOCKS_URL = `https://opensheet.elk.sh/${SHEET_ID}/STOCKS`;
