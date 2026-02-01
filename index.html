@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boîtes Mystères</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Mini-Entreprise – Boîtes Mystères</h1>
+
+  <div class="box-container">
+    <div class="box" data-type="Medium Beauté">
+      <div class="image-placeholder"></div>
+      <h2>Medium Beauté</h2>
+      <p class="price">10 €</p>
+      <p>Stock restant : <span class="stock" id="stock-medium-beaute">...</span></p>
+      <button class="reserve-btn">Réserver</button>
+    </div>
+
+    <div class="box" data-type="Large Beauté">
+      <div class="image-placeholder"></div>
+      <h2>Large Beauté</h2>
+      <p class="price">15 €</p>
+      <p>Stock restant : <span class="stock" id="stock-large-beaute">...</span></p>
+      <button class="reserve-btn">Réserver</button>
+    </div>
+
+    <div class="box" data-type="Medium Nourriture">
+      <div class="image-placeholder"></div>
+      <h2>Medium Nourriture</h2>
+      <p class="price">10 €</p>
+      <p>Stock restant : <span class="stock" id="stock-medium-nourriture">...</span></p>
+      <button class="reserve-btn">Réserver</button>
+    </div>
+
+    <div class="box" data-type="Large Nourriture">
+      <div class="image-placeholder"></div>
+      <h2>Large Nourriture</h2>
+      <p class="price">15 €</p>
+      <p>Stock restant : <span class="stock" id="stock-large-nourriture">...</span></p>
+      <button class="reserve-btn">Réserver</button>
+    </div>
+  </div>
+
+  <div id="reservation-form" class="hidden">
+    <h2>Réserver votre boîte</h2>
+    <form id="form">
+      <input type="text" id="nom" placeholder="Nom" required />
+      <input type="text" id="prenom" placeholder="Prénom" required />
+      <input type="text" id="contact" placeholder="Email ou téléphone" required />
+      <p>Type de boîte : <span id="selected-type"></span></p>
+      <label>Quantité :</label>
+      <div class="quantity-controls">
+        <button type="button" id="minus">–</button>
+        <span id="quantity">1</span>
+        <button type="button" id="plus">+</button>
+      </div>
+      <button type="submit">Confirmer la réservation</button>
+    </form>
+  </div>
+
+  <div id="confirmation" class="hidden">
+    <h2>Réservation confirmée !</h2>
+    <p>Merci pour votre réservation.</p>
+    <p>Le paiement se fera en liquide dans la cour côté lycée du <strong>Lycée Saint-Pierre</strong>.</p>
+    <p>Présentez-vous avec votre nom, nous vous retrouverons sur nos fiches.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
